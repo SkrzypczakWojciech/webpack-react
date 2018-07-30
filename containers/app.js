@@ -25,8 +25,8 @@ class App extends React.Component {
         <div className={style.TodoApp}>
             Tutaj pojawią się komponenty naszej aplikacji.
         </div>
-    );
-}
+        );
+    }
 }
 
 export default App;
