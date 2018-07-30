@@ -1,7 +1,9 @@
 const path = require('path');
 
-module.exports = {
-    entry: './src/index.js',
+module.exports = (env) => {
+    return {
+        mode: env || 'production',
+        entry: './src/index.js',
         output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'index.bundle.js'
@@ -25,5 +27,6 @@ module.exports = {
             ]
         }
     ]
+}
 }
 };
