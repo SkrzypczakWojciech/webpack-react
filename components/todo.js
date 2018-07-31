@@ -20,8 +20,8 @@ var toDo = React.createClass({
   },
 
   render: function() {
-    var toDo = this.props.items.map = toDo => {
-        return React.createElement(toDo, {item: toDo, key: toDo.id});
+    var toDo = this.props.items.map = singleToDo => {
+        return React.createElement(singleToDo, {item: singleToDo, key: singleToDo.id});
     };
     return (
       React.createElement('ul', toDo)
