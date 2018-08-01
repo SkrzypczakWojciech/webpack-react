@@ -1,6 +1,6 @@
 import React from 'react';
 
-var toDo = [
+const toDo = [
 {
 id: 1,
     text: 'clean room'
