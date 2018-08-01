@@ -28,3 +28,5 @@ var toDo = React.createClass({
     );
   }
 });
+
+export default toDo;

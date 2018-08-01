@@ -25,7 +25,14 @@ module.exports = (env) => {
                     }
                 }
             ]
+        },
+        {
+        test: /\.js$/,
+        loader: "babel-loader",
+        options: {
+        plugins: env !== 'production' ? ["react-hot-loader/babel"] : []
         }
+    }
     ]
 }
 }

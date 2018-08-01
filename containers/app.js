@@ -1,5 +1,8 @@
 import React from 'react';
 import style from './app.css';
+import title from '../components/title';
+import toDo from '../components/todo';
+import { hot } from 'react-hot-loader';
 
 class App extends React.Component {
     constructor(props){
@@ -23,10 +26,12 @@ class App extends React.Component {
     render() {
     return (
         <div className={style.TodoApp}>
+        	<title title={'rzeczy do zrobienia:'+ this.state.data.length}></title>
+        	<toDo/>
             Tutaj pojawią się komponenty naszej aplikacji.
         </div>
         );
     }
 }
 
-export default App;
+export default hot(module)(App);

@@ -6,7 +6,6 @@ import uuid from 'uuid';
 
 
 ReactDOM.render(
-	<Title />,
     <App />,
     document.getElementById('app')
 );
