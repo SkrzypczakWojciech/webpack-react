@@ -20,13 +20,11 @@ class ToDo extends React.Component{
   },
 
   render: function() {
-    var toDo = this.props.items.map = singleToDo => {
-        return React.createElement(singleToDo, {item: singleToDo, key: singleToDo.id});
-    };
+    toDo = this.props.items.map = singleToDo => {
     return (
-      <div>
-        {this.items}
-      </div>
+      <singleToDo>
+        {item: singleToDo, key: singleToDo.id};
+      </singleToDo>
     );
   }
 
