@@ -14,7 +14,7 @@ id: 3,
 ]
 
 
-var toDo = React.createClass({
+class ToDo extends React.Component{
   propTypes: {
     items: React.PropTypes.array.isRequired,
   },
@@ -24,9 +24,11 @@ var toDo = React.createClass({
         return React.createElement(singleToDo, {item: singleToDo, key: singleToDo.id});
     };
     return (
-      React.createElement('ul', toDo)
+      <div>
+        {this.items}
+      </div>
     );
   }
-});
 
-export default toDo;
+
+export default ToDo;

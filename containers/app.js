@@ -27,7 +27,7 @@ class App extends React.Component {
     return (
         <div className={style.TodoApp}>
         	<title title={'rzeczy do zrobienia:'+ this.state.data.length}></title>
-        	<toDo/>
+        	<ToDo></ToDo>
             Tutaj pojawią się komponenty naszej aplikacji.
         </div>
         );
