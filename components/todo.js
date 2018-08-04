@@ -10,7 +10,7 @@ class ToDo extends React.Component{
     toDo = this.state.data.map = singleToDo => {
     return (
       <singleToDo>
-        {item: singleToDo.text, key: singleToDo.id};
+        {singleToDo: singleToDo, key: singleToDo.id};
       </singleToDo>
     );
   }
