@@ -1,18 +1,5 @@
 import React from 'react';
 
-const toDo = [
-{
-id: 1,
-    text: 'clean room'
-}, {
-id: 2,
-    text: 'wash the dishes'
-}, {
-id: 3,
-    text: 'feed my cat'
-}
-]
-
 
 class ToDo extends React.Component{
   propTypes: {
@@ -20,7 +7,7 @@ class ToDo extends React.Component{
   },
 
   render: function() {
-    toDo = this.props.items.map = singleToDo => {
+    toDo = this.state.data.map = singleToDo => {
     return (
       <singleToDo>
         {item: singleToDo, key: singleToDo.id};
