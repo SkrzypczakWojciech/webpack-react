@@ -10,3 +10,7 @@
     width: 100vw;
     height: 100vh;
 }
+
+.todo-remove-span {
+    margin-left: 10px;
+}
