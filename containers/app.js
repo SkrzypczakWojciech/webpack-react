@@ -18,7 +18,7 @@ class App extends React.Component {
                 }, {
                     id: 3,
                     text: 'Nakarmic psa',
-                }
+                }, 
             ]
         };
     }
