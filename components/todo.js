@@ -1,19 +1,9 @@
+
 import React from 'react';
+import style from './../containers/app.css';
 
+const Todo = props => {
+    return (<li>{props.text}<span className={style["todo-remove-span"]} onClick={() => {props.remove(props.id)}}>x</span></li>);
+};
 
-class ToDo extends React.Component{
-  propTypes: {
-    items: React.PropTypes.array.isRequired,
-  },
-
-  render: function() {
-    toDo = this.state.data.map = singleToDo => {
-    return (
-      <singleToDo>
-        {singleToDo: singleToDo, key: singleToDo.id};
-      </singleToDo>
-    );
-  }
-
-
-export default ToDo;
+export default Todo;

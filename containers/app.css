@@ -10,3 +10,13 @@
     width: 100vw;
     height: 100vh;
 }
+
+.todo-remove-span {
+    margin-left:15px;
+    padding:2px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.todo-remove-span:hover {
+    cursor:pointer;
+}
