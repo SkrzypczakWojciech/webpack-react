@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './app.css';
 import Title from '../components/Title';
+import TodoForm from '../components/todoform.js';
 import TodoList from '../components/TodoList';
 import {hot} from 'react-hot-loader';
 
@@ -42,6 +43,7 @@ class App extends React.Component {
             <div className={style.TodoApp}>
                 <Title title={'Rzeczy do zrobienia: ' + this.state.data.length}></Title>
                 <TodoList todos={this.state.data} removeTodo={this.removeTodo.bind(this)}></TodoList>
+                <TodoForm addTodo={this.addTodo}></TodoForm>
             </div>
         );
     }
